@@ -1,0 +1,478 @@
+/* Portada */
+.portada {
+    position: relative;
+    height: 100vh;
+    background: #000; /* Fondo negro para cualquier fallo de la imagen */
+    overflow: hidden; /* Asegura que todo el contenido se ajuste al tamaño de la portada */
+}
+
+.portada img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Mantiene la imagen detrás del contenido */
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start; /* Cambiado a flex-start para alinear al lado izquierdo */
+    align-items: center; /* Centra verticalmente */
+    padding-left: 50px; /* Espacio desde el borde izquierdo */
+    z-index: 2; /* Asegura que el texto esté encima de la imagen */
+}
+
+.texto-portada {
+    background-color: rgba(187, 187, 187, .5); /* Cuadro transparente */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 900px; /* Ancho máximo del cuadro */
+}
+
+.texto-portada h1 {
+    font-size: 2.4rem;
+    color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.texto-portada .btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 25px;
+    background-color: #c9c9c9;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    animation: fadeIn 2s ease-in-out;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    border-color: #003366;
+}
+
+.texto-portada .btn:hover {
+    background-color: #a5a5a5;
+    transform: scale(1.05);
+    border-color: #003366;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Introducción -----------------------------------------------------------------------------------*/
+.seccion2 {
+    padding: 70px;
+    background-color: #222;
+    color: white;
+    position: relative; /* Esto permite posicionar el contenido dentro */
+}
+.seccion {
+    padding: 70px;
+    background-color: #222;
+    color: white;
+    position: relative; /* Esto permite posicionar el contenido dentro */
+}
+
+#I {
+    font-size: 3rem;
+    text-align: left;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#I2 {
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 80px;
+    text-align: justify;
+}
+
+.card {
+    position: absolute; /* Esto hace que la tarjeta se posicione de forma independiente */
+    right: 0; /* Alinea la tarjeta a la derecha */
+    top: 50%; /* Centra la tarjeta verticalmente */
+    transform: translateY(-50%); /* Ajuste para centrar exactamente */
+    width: 600px; /* Ajusta el ancho de la tarjeta */
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+    border: none;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+    z-index: 1; /* Asegura que la tarjeta esté por encima de otros elementos */
+}
+
+.card img {
+    width: 100%; /* La imagen ocupa todo el ancho de la tarjeta */
+    height: 200px; /* Ajusta la altura de la imagen */
+    object-fit: cover; /* Recorta la imagen para que se ajuste */
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+}
+/* Animación de entrada */
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Estilo de la sección objetivo */
+#objetivo {
+    padding: 150px;
+    background-color: #222;
+    color: white;
+}
+
+#O{
+    font-size: 40px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.objetivo-parrafo {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    transition: all 0.5s ease;
+}
+
+/* Estilo para el botón */
+.ver-mas {
+    margin-top: 20px;
+}
+/* Estilo del botón */
+.ver-mas {
+    background: linear-gradient(45deg, #a4a5a6, #969696);
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    border-color: #003366;
+}
+
+/* Efecto hover */
+.ver-mas:hover {
+    background: linear-gradient(45deg, #797979, #a9a9a9);
+    transform: scale(1.1); /* Efecto de agrandamiento */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Sombra */
+    border-color: #003366;
+}
+
+/* Estilo del cuadro de texto -----------------------------------------------------*/
+/* Ajustes generales para la sección */
+#hipotesis {
+    background-color: #212529; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco por defecto */
+    padding: 50px 0; /* Espaciado superior e inferior */
+}
+
+/* Imagen ajustada */
+#hipotesis img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del cuadro derecho */
+#H {
+    background-color: rgba(220, 219, 219, 0.5);
+    color: #d1d1d1; /* Texto oscuro para contraste */
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Título del cuadro */
+#hipotesis h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Párrafo dentro del cuadro */
+#hipotesis p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #ffffff; /* Gris oscuro */
+}
+
+
+/* Estilo para la sección Justificación */
+#justificacion {
+    background-color:#212529; /* Fondo oscuro */
+    color: #ffffff; /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Contenedor del video */
+#justificacion .text-center {
+    margin-top: 30px; /* Espaciado superior */
+}
+
+/* Estilo del video */
+#justificacion video {
+    width: 80%; /* Ajusta el tamaño del video al 80% del contenedor */
+    height: auto; /* Mantiene la proporción del video */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del video */
+}
+
+/* Opcional: si quieres darle una mayor separación a la sección */
+#justificacion {
+    margin-bottom: 50px; /* Separación al final de la sección */
+}
+/* Estilo general para la sección de desarrollo -------------------------------------------------------------------------------*/
+#desarrollo {
+    padding: 50px 0;
+    background-color: #001a33;
+    color: #ffffff;
+}
+
+/* Sección interna para las columnas */
+#desarrollo .col-md-4 {
+    margin-bottom: 20px; /* Espaciado entre columnas */
+}
+
+/* Estilo de los títulos de las secciones */
+#desarrollo h3 {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+#F{
+    width: 50%;
+}
+/* Párrafos dentro de las secciones */
+#desarrollo p {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+/* Botón de mostrar detalles */
+#mostrarSecciones {
+    margin-top: 20px;
+    background-color: #797979;
+    width: 150px;
+    height: 50px;
+}
+
+.p-3{
+    color: #020130;
+}
+/* Estilo del contenedor del video */
+.video-container {
+    width: 50%;
+    padding-top: 10%;/* Relación de aspecto 16:9 */ 
+    justify-content: center;  /* Centra el video horizontalmente */
+    align-items: center;  
+}
+
+/* Animación del botón */
+.comprar-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    margin-left: -80px;
+    margin-top: 650px;
+}
+
+/* Efecto al pasar el mouse */
+.comprar-btn:hover {
+    transform: scale(1.1);
+    background-color: #e60000;  /* Cambia a un color más fuerte al pasar el mouse */
+}
+
+/* Centrado de las columnas */
+.row.justify-content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;  /* Ajusta el margen superior */
+}
+
+/* Ajuste del margen superior para que no esté tan abajo */
+.row.mt-3 {
+    margin-top: 40px;
+}
+
+/* Asegura que las columnas del video y el botón estén centradas */
+.col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Estilo para la card-------------------------------------------- */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Centrado de la imagen */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-width: 300px;  /* Ajusta el tamaño máximo de la imagen */
+    margin: 0 auto 20px;
+}
+
+/* Estilo del botón de compra */
+.comprar-btn1 {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    margin-top: 650px;
+}
+
+/* Efecto al pasar el mouse */
+.comprar-btn1:hover {
+    transform: scale(1.1);
+    background-color: #e60000;
+}
+
+/* Estilo para los botones de aumentar y disminuir cantidad */
+.input-group button {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: #3c3c3c;
+    border: 1px solid #ccc;
+}
+
+.input-group input {
+    width: 80px;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+#logo {
+    width: 90px; /* Tamaño del logo */
+    height: auto; /* Mantiene la proporción */
+    display: block;
+    margin: 0; /* Elimina centrado automático */
+    position: relative; /* Permite mover con `left` */
+    left: -10px; /* Ajusta este valor para mover más o menos a la izquierda */
+}
+
+#compra {
+    margin-top: 200px; /* Ajusta este valor según la distancia que quieras */
+}
+#comprarr{
+    background-color: #797979;
+}
+
+.product-img {
+    width: 100%; /* Asegura que ocupe todo el ancho del contenedor */
+    height: 200px !important; /* Fuerza la altura deseada */
+    object-fit: cover; /* Mantiene proporciones al expandirse */
+    display: block; /* Asegura que se comporte como bloque */
+    margin: 0 auto; /* Centra la imagen si hay espacio */
+    border-radius: 10px; /* Opcional: bordes redondeados */
+}
+
+.card {
+    height: auto; /* Permite que el contenedor se ajuste automáticamente */
+    overflow: visible; /* Asegura que el contenido no se recorte */
+}
+.comprar-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #003366; /* Azul más oscuro */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 5px;
+    margin: 20px auto; /* Centra el botón horizontalmente */
+    display: block; /* Asegura el centrado dentro del contenedor */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.comprar-btn:hover {
+    transform: scale(1.1);
+    background-color: #001a33; /* Azul aún más oscuro */
+}
+.regresar-btn {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #001a33; /* Color azul */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    position: absolute;
+    right: 20px; /* Coloca el botón en el lado derecho */
+    bottom: 20px; /* Ajusta la posición desde el fondo */
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el mouse */
+.regresar-btn:hover {
+    transform: scale(1.1);
+    background-color: #001a37; /* Azul más oscuro */
+}
+
+/* Estilo inicial para las secciones */
+.seccion2 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Cuando la sección entra en el viewport */
+.seccion2.show {
+    opacity: 1;
+    transform: translateY(0);
+}

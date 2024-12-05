@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <title>Carrito de Compras</title>
+</head>
+<body id="comprarr">
+    <header></header>
+    <div class="d-flex align-items-center">
+        <img id="logo" src="../Proyecto Automotriz/media/logoo.jpeg" alt="Logo de Inventario">
+        <h1 class="text-center ms-3">INNTECH</h1>
+        <a href="index.html">
+            <button class="btn btn-secondary regresar-btn">Regresar a Inicio</button>
+        </a>        
+    </div>
+    <section id="compra" class="seccion">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="../Proyecto Automotriz/media/PRo.jpeg" class="product-img" alt="Producto">
+                        <div class="card-body">
+                            <h5 class="card-title">Compra Producto</h5>
+                            <div class="form-group">
+                                <label for="cantidad">Cantidad:</label>
+                                <div class="input-group">
+                                    <button class="btn btn-secondary" id="decrease" onclick="cambiarCantidad(-1)">-</button>
+                                    <input type="number" id="cantidad" class="form-control" value="1" min="1" readonly>
+                                    <button class="btn btn-secondary" id="increase" onclick="cambiarCantidad(1)">+</button>
+                                </div>
+                            </div>
+                            <p class="price">Precio Unitario: $200.00</p>
+                            <p class="iva">IVA (16%): $<span id="iva">32.00</span></p>
+                            <p class="total">Total: $<span id="total">232.00</span></p>
+                            <button class="btn btn-primary comprar-btn">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer></footer>
+    <script src="js/java.js"></script>
+</body>
+</html>

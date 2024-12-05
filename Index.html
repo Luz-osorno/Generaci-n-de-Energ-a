@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Proyecto Innovador</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container-fluid">
+            <img id="logo" src="../Proyecto Automotriz/media/logoo.jpeg" alt="Logo de Inventario">
+            <a class="navbar-brand" href="#">INNTECH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#introduccion">Introducción</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#objetivo">Objetivo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hipotesis">Hipótesis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#justificacion">Justificación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#desarrollo">Desarrollo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="portada">
+        <img src="../Proyecto Automotriz/media/img.png" alt="Imagen de portada" class="img-fluid">
+        <div class="overlay">
+            <div class="texto-portada">
+                <h1>Generación de Energía Eólica a partir de Motores de Juguete </h1>
+                <a href="#introduccion" class="btn btn-primary">Ver más</a>
+            </div>
+        </div>
+    </header>
+    
+
+    <main class="contenido">
+        <section id="introduccion" class="seccion2">
+            <h2 id="I">Introducción</h2>
+            <div class="row">
+                <!-- Columna del párrafo -->
+                <div id="I2" class="col-md-6">
+                    <p>Este proyecto propone un sistema de generación de energía eólica utilizando motores pequeños, como los motores de juguete, para captar la energía del viento generado por ejemplo el movimiento de una motocicleta. La electricidad producida puede alimentar dispositivos de baja potencia, como teléfonos móviles o luces auxiliares, en motocicletas, especialmente modelos más antiguos sin sistemas de carga integrados. El objetivo es demostrar la viabilidad de generar electricidad de forma accesible y sostenible, utilizando materiales económicos y reciclados.</p>
+                </div>
+                <!-- Columna de imagen y texto -->
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="../Proyecto Automotriz/media/I.jpg" class="card-img-top" alt="Introducción">
+                        <div class="card-body">
+                            <h5 class="card-title">Energía Eólica</h5>
+                            <p class="card-text">Este proyecto propone generar energía eólica a partir del movimiento de una motocicleta, utilizando hélices y pequeños motores de juguetes para convertir el aire en electricidad, ofreciendo una fuente de energía accesible y sostenible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section id="objetivo" class="seccion2">
+            <h2 id="O" class="text-right animated fadeInRight">Objetivo</h2>
+            <p id="objetivo-text" class="text-right objetivo-parrafo" style="display:none;">
+                Desarrollar un sistema eficiente para generar electricidad en vehículos que no cuenten con puertos USB, utilizando la energía eólica producida por el desplazamiento del vehículo. Este sistema busca proporcionar una fuente de energía adicional a los motociclistas, especialmente aquellos que trabajan largas horas y requieren cargar sus dispositivos móviles durante el viaje.
+            </p>
+            <div class="text-right">
+                <button class="btn btn-primary ver-mas" onclick="mostrarObjetivo()">Ver más</button>
+            </div>
+        </section>
+        
+
+        <section id="hipotesis" class="seccion2">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Columna para la imagen -->
+                    <div class="col-md-6 text-center">
+                        <img src="../Proyecto Automotriz/media/H.jpeg" alt="Imagen descriptiva" class="img-fluid">
+                    </div>
+                    <!-- Columna para el cuadro con título y párrafo -->
+                    <div class="col-md-6">
+                        <div class=" p-4 rounded shadow" id="H">
+                            <h2>Hipótesis</h2>
+                            <p>
+                                Si se instalan hélices conectadas a motores pequeños, el viento generado durante su desplazamientopodrá generar suficiente electricidad para alimentar dispositivos eléctronicos de bajo consumo o cargar baterias, promoviendo así el uso eficiente de energía renovable.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+
+        <section id="justificacion" class="seccion2">
+            <!-- Video en la sección Justificación -->
+            <div class="text-center">
+                <video width="80%" controls autoplay loop muted>
+                    <source src="../Proyecto Automotriz/media/J.mp4" type="video/mp4">
+                    Tu navegador no soporta el formato de video.
+                </video>
+            </div>
+        </section>        
+        <section id="desarrollo" class="seccion2">
+            <div class="container">
+                <!-- Título del contenedor -->
+                <h2 style="font-family: Georgia, 'Times New Roman', Times, serif;">Desarrollo</h2>
+        
+                <!-- Párrafo introductorio -->
+                <p id="D" style="color: #c1c1c1;">El sistema utiliza pequeños motores DC tipo 130, comunes en juguetes, que actúan como generadores al girar mediante hélices instaladas en la motocicleta. Estos motores pueden producir hasta 9V de corriente cuando el rotor gira a altas velocidades.
+                    Se realizaron pruebas en diferentes condiciones de velocidad y diseño, considerando aspectos como:</p>
+        
+                <!-- Botón para mostrar las secciones -->
+                <button id="mostrarSecciones" class="btn btn-primary">Ver Aspectos</button>
+        
+                <!-- Secciones ocultas inicialmente -->
+                <div id="secciones" class="row mt-4" style="display: none;">
+                    <div class="col-md-4">
+                        <div class="p-3" style="background-color: #8ea6cc;">
+                            <h3>Aspecto 1</h3>
+                            <p id="s">Velocidad de la motocicleta: Se analizaron rangos de 30-120 km/h.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3" style="background-color: #c1c1c1;">
+                            <h3>Aspecto 2</h3>
+                            <p id="s">Resistencia aerodinámica: Se optimizó la ubicación de las hélices.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="p-3" style="background-color: #cce1ff;">
+                            <h3>Aspecto 3</h3>
+                            <p id="s">Prototipo: Se validó la funcionalidad y resistencia del sistema.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Video y botón de compra -->
+            <div class="row mt-1">
+                <!-- Video en el lado derecho -->
+                <div class="col-md-6">
+                    <div class="video-container">
+                        <video width="100%" height="auto" controls autoplay loop muted>
+                            <source src="../Proyecto Automotriz/media/D.mp4" type="video/mp4">
+                            Tu navegador no soporta el formato de video.
+                        </video>
+                    </div>
+                </div>
+                
+                <!-- Botón de comprar al lado izquierdo del video -->
+                <div class="col-md-6 d-flex align-items-center">
+                    <a href="../Proyecto Automotriz/Comprar.html" class="btn btn-danger comprar-btn1">Comprar</a>
+                </div>
+            </div>
+
+        </section>
+        
+        
+        
+    </main>
+
+    <footer class="text-center py-4 bg-dark text-white">
+        <p>HERNANDEZ VARGAS HECTOR AARON</p>
+        <p>BERCERRA BONILLA CHRISTPOHER MICHELLE</p>
+        <p>PEREZ ZENDEJAS ALBERTO</p>
+    </footer>
+</body>
+<script src="js/java.js"></script>
+</html>
